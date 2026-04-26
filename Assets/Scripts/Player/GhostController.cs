@@ -11,6 +11,9 @@ public class GhostController : MonoBehaviour
     private Rigidbody rb;
     private Vector3 movement;
     
+    [HideInInspector]
+    public bool isGrabbing = false;
+    
     [Header("Animasyon")]
     [Tooltip("Karakterin üzerindeki Animator bileşeni (Otomatik bulunur)")]
     private Animator animator;
@@ -64,6 +67,8 @@ public class GhostController : MonoBehaviour
 
     private void RotateGhost()
     {
+        if (isGrabbing) return; // Obje çekerken dönmeyi iptal et
+        
         if (movement != Vector3.zero)
         {
             Quaternion toRotation = Quaternion.LookRotation(movement, Vector3.up);
