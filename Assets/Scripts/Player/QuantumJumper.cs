@@ -4,15 +4,15 @@ using UnityEngine.InputSystem;
 public class QuantumJumper : MonoBehaviour
 {
     [Header("Kuantum Sıçrama Ayarları")]
-    [Tooltip("Sağ ekranda duran gerçek ceset/tabut objesi")]
     public Transform corpseTransform; 
-    
-    [Tooltip("Sıçrama için basılacak tuş (Varsayılan: Space)")]
     public Key jumpKey = Key.Space;
+    
+    [Header("Kuantum İzi")]
+    [Tooltip("Sıçrama sonrası geride kalacak iz objesi (Prefab)")]
+    public GameObject trailPrefab;
 
     void Update()
     {
-        // Yeni Input Sistemi ile sıçrama tuşunu kontrol et
         if (Keyboard.current != null && Keyboard.current[jumpKey].wasPressedThisFrame)
         {
             TryQuantumJump();
@@ -21,24 +21,16 @@ public class QuantumJumper : MonoBehaviour
 
     private void TryQuantumJump()
     {
-        // Sahnede ruhun etrafındaki AnchorPoint'leri bul (Performans için OverlapSphere kullanıyoruz)
-        // Şimdilik sadece yakınlık ve kilit durumunu kontrol edeceğiz.
-        
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, 5f); // 5 birimlik arama yarıçapı
-        
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, 5f); 
         AnchorPoint closestValidAnchor = null;
         float minDistance = float.MaxValue;
 
         foreach (var hitCollider in hitColliders)
         {
             AnchorPoint anchor = hitCollider.GetComponent<AnchorPoint>();
-            
             if (anchor != null && anchor.anchorData != null)
             {
-                // Çapa ile ruh arasındaki mesafeyi ölç
                 float distance = Vector3.Distance(transform.position, anchor.transform.position);
-                
-                // Eğer mesafe etkileşim yarıçapı içindeyse ve çapa AÇIKSA
                 if (distance <= anchor.interactionRadius && anchor.anchorData.isUnlocked)
                 {
                     if (distance < minDistance)
@@ -50,15 +42,9 @@ public class QuantumJumper : MonoBehaviour
             }
         }
 
-        // Eğer uygun bir çapa bulduysak, sıçramayı gerçekleştir!
         if (closestValidAnchor != null)
         {
             PerformJump(closestValidAnchor);
-        }
-        else
-        {
-            Debug.Log("Kuantum Sıçraması Başarısız: Yakında açık bir çapa noktası bulunamadı.");
-            // İleride buraya düşük perdeli, hata belirten bir "bzzzt" sesi eklenecek.
         }
     }
 
@@ -66,19 +52,17 @@ public class QuantumJumper : MonoBehaviour
     {
         if (corpseTransform != null)
         {
-            // Cesedi çapa noktasının pozisyonuna ışınla
+            // 1. Sıçramadan ÖNCE eski konumda bir iz (Trail) oluştur
+            if (trailPrefab != null)
+            {
+                Instantiate(trailPrefab, corpseTransform.position, Quaternion.identity);
+            }
+
+            // 2. Cesedi yeni çapa noktasına ışınla
             corpseTransform.position = targetAnchor.transform.position;
-            
-            // İsteğe bağlı: Cesedin yönünü de çapa ile aynı yap
             corpseTransform.rotation = targetAnchor.transform.rotation;
             
             Debug.Log($"Kuantum Sıçraması Başarılı! Ceset '{targetAnchor.anchorData.anchorID}' noktasına çöktü.");
-            
-            // İleride buraya partikül efekti, iz bırakma ve imza niteliğindeki "çınlama" sesi eklenecek.
-        }
-        else
-        {
-            Debug.LogError("QuantumJumper: Ceset (Corpse) objesi atanmamış!");
         }
     }
 }
