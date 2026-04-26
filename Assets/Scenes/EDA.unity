@@ -337,6 +337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_WallShelf_10
       objectReference: {fileID: 0}
+    - target: {fileID: 2441617805777168757, guid: 749c2a5748128554ca311af7d0cc8952, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3074145287010104271, guid: 749c2a5748128554ca311af7d0cc8952, type: 3}
       propertyPath: m_LocalScale.x
       value: 9
@@ -641,9 +645,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1932752104}
     m_Modifications:
+    - target: {fileID: 435395411746526776, guid: ce7337e3a3bbc634195753b9a2d39f9c, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5080751405492730057, guid: ce7337e3a3bbc634195753b9a2d39f9c, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5939951919464749023, guid: ce7337e3a3bbc634195753b9a2d39f9c, type: 3}
       propertyPath: m_Name
       value: Prop_Cabinet_06
+      objectReference: {fileID: 0}
+    - target: {fileID: 5939951919464749023, guid: ce7337e3a3bbc634195753b9a2d39f9c, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6423578240101174629, guid: ce7337e3a3bbc634195753b9a2d39f9c, type: 3}
       propertyPath: m_LocalScale.x
@@ -722,6 +738,10 @@ PrefabInstance:
     - target: {fileID: 2489983114055231159, guid: 4ccbd0316b6b9714c8810954bb035dd9, type: 3}
       propertyPath: m_Name
       value: Prop_Table_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489983114055231159, guid: 4ccbd0316b6b9714c8810954bb035dd9, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3010061376514948109, guid: 4ccbd0316b6b9714c8810954bb035dd9, type: 3}
       propertyPath: m_LocalScale.x
@@ -1699,6 +1719,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_KitchenCabinet_02_N
       objectReference: {fileID: 0}
+    - target: {fileID: 5477680540438558870, guid: b711e0f039be022438f22f21ececc7e6, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2152,6 +2176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_WallSwitch (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5180696233142960058, guid: d9cac79e541b09c4c996ff419a009ea9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5525449905927152896, guid: d9cac79e541b09c4c996ff419a009ea9, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -2428,6 +2456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_BagChair_03
       objectReference: {fileID: 0}
+    - target: {fileID: 7182004819003657409, guid: a27ebda50ef194146a054b3b6cebb4ce, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7557123703812331131, guid: a27ebda50ef194146a054b3b6cebb4ce, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8
@@ -2696,7 +2728,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 437363620}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2925,6 +2957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Bed_07
       objectReference: {fileID: 0}
+    - target: {fileID: 6398270387838087931, guid: 4d46da9568dbb7c48b8d98c594a9a551, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3012,6 +3048,10 @@ PrefabInstance:
     - target: {fileID: 1616480087954205447, guid: a4cb1053db319414699a1dff5dfd9ef7, type: 3}
       propertyPath: m_Name
       value: Prop_Shelve_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1616480087954205447, guid: a4cb1053db319414699a1dff5dfd9ef7, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2100142799666082237, guid: a4cb1053db319414699a1dff5dfd9ef7, type: 3}
       propertyPath: m_LocalScale.x
@@ -3290,6 +3330,10 @@ PrefabInstance:
     - target: {fileID: 2023733312764528353, guid: c59be4c6d5c99ec46b0fcede8bb3a0ed, type: 3}
       propertyPath: m_Name
       value: Prop_Paint_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 2023733312764528353, guid: c59be4c6d5c99ec46b0fcede8bb3a0ed, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3889,6 +3933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_WallSwitch (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5180696233142960058, guid: d9cac79e541b09c4c996ff419a009ea9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5525449905927152896, guid: d9cac79e541b09c4c996ff419a009ea9, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -4201,6 +4249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Homeplant_04
       objectReference: {fileID: 0}
+    - target: {fileID: 8241213943012982886, guid: b3854da674eb65e45834980227b6361c, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8725017044253760220, guid: b3854da674eb65e45834980227b6361c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -4484,6 +4536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_TrashCan_02
       objectReference: {fileID: 0}
+    - target: {fileID: 8631641884575415984, guid: c37ec82a1cd565f49a1171702fb5821e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8971751151732024330, guid: c37ec82a1cd565f49a1171702fb5821e, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8
@@ -4617,6 +4673,10 @@ PrefabInstance:
     - target: {fileID: 3360137049589760456, guid: 8b1ee06d8146d3c40a03576520b323c5, type: 3}
       propertyPath: m_Name
       value: Prop_Chair_05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3360137049589760456, guid: 8b1ee06d8146d3c40a03576520b323c5, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5038,6 +5098,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Shelve_12
       objectReference: {fileID: 0}
+    - target: {fileID: 8241635809565340059, guid: a380938e4cc3a024c9f4aaf6b18082e8, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8731350164825418529, guid: a380938e4cc3a024c9f4aaf6b18082e8, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8
@@ -5329,6 +5393,10 @@ PrefabInstance:
     - target: {fileID: 5180696233142960058, guid: d9cac79e541b09c4c996ff419a009ea9, type: 3}
       propertyPath: m_Name
       value: Prop_WallSwitch (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5180696233142960058, guid: d9cac79e541b09c4c996ff419a009ea9, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5525449905927152896, guid: d9cac79e541b09c4c996ff419a009ea9, type: 3}
       propertyPath: m_LocalScale.x
@@ -6176,6 +6244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Washer_01
       objectReference: {fileID: 0}
+    - target: {fileID: 7689876631039489814, guid: a7ab1bb90a3206b4b83bff2c6fef346d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6959,7 +7031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1058015482}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: House
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7469,7 +7541,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1135074239}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorTiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7715,6 +7787,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GhostController
   moveSpeed: 7
   rotationSpeed: 12
+  isGrabbing: 0
 --- !u!54 &1178093779
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8029,6 +8102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Paint_01
       objectReference: {fileID: 0}
+    - target: {fileID: 7345133845001565848, guid: 1611636b689b34a4d8adb634ee304705, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7972771002670394402, guid: 1611636b689b34a4d8adb634ee304705, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8
@@ -8106,6 +8183,10 @@ PrefabInstance:
     - target: {fileID: 6282063412259024970, guid: 053fef6cc17b11f4485e27a5d11ffafe, type: 3}
       propertyPath: m_Name
       value: Prop_Chest
+      objectReference: {fileID: 0}
+    - target: {fileID: 6282063412259024970, guid: 053fef6cc17b11f4485e27a5d11ffafe, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6657885744878398192, guid: 053fef6cc17b11f4485e27a5d11ffafe, type: 3}
       propertyPath: m_LocalScale.x
@@ -8522,6 +8603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_WallSwitch
       objectReference: {fileID: 0}
+    - target: {fileID: 5180696233142960058, guid: d9cac79e541b09c4c996ff419a009ea9, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5525449905927152896, guid: d9cac79e541b09c4c996ff419a009ea9, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -8655,6 +8740,10 @@ PrefabInstance:
     - target: {fileID: 6690426779033381855, guid: 23114291690960946b14a5bb259ae6d2, type: 3}
       propertyPath: m_Name
       value: Prop_Sink_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6690426779033381855, guid: 23114291690960946b14a5bb259ae6d2, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10012,6 +10101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_ModernTV
       objectReference: {fileID: 0}
+    - target: {fileID: 1585560560081108179, guid: cbb101066286a4d4988a8886ded30e67, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2110739349614143081, guid: cbb101066286a4d4988a8886ded30e67, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8
@@ -10088,15 +10181,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a9d9ccaf07141f84cb56fce18c0fc47a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 200
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a9d9ccaf07141f84cb56fce18c0fc47a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 200
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a9d9ccaf07141f84cb56fce18c0fc47a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 200
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a9d9ccaf07141f84cb56fce18c0fc47a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11013,8 +11106,8 @@ Transform:
   m_GameObject: {fileID: 1708734721}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -9, y: 0.02, z: 7}
-  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_LocalPosition: {x: -9, y: 0.02, z: 6.03}
+  m_LocalScale: {x: 6, y: 4.1594234, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1135074239}
@@ -11557,6 +11650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Paint_02
       objectReference: {fileID: 0}
+    - target: {fileID: 163538387528808716, guid: a0d35adfa623ffe4cb4749541a41fca7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 652689758660273078, guid: a0d35adfa623ffe4cb4749541a41fca7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8
@@ -11866,6 +11963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Chair_05 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3360137049589760456, guid: 8b1ee06d8146d3c40a03576520b323c5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12009,6 +12110,10 @@ PrefabInstance:
     - target: {fileID: 1007174147267561249, guid: e11aaa56ec9056545aee725ec26a574a, type: 3}
       propertyPath: m_Name
       value: Prop_HomeLamp_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007174147267561249, guid: e11aaa56ec9056545aee725ec26a574a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12280,6 +12385,18 @@ PrefabInstance:
     - target: {fileID: 2275775694979007851, guid: d7fb087ca6326a746bc2d460db02702c, type: 3}
       propertyPath: m_Name
       value: Prop_Wardrobe_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 2275775694979007851, guid: d7fb087ca6326a746bc2d460db02702c, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206591503468000553, guid: d7fb087ca6326a746bc2d460db02702c, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424156121670105970, guid: d7fb087ca6326a746bc2d460db02702c, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12623,6 +12740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_KidsClock
       objectReference: {fileID: 0}
+    - target: {fileID: 7413652023988646185, guid: 3f2b5850f354baa4ba3d794b4939b879, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7901923506118634387, guid: 3f2b5850f354baa4ba3d794b4939b879, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8
@@ -12698,7 +12819,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1932752104}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Furniture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13092,6 +13213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Paint_03
       objectReference: {fileID: 0}
+    - target: {fileID: 2557758879529182899, guid: ab234495dd338a246b23137afc65957c, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2897270909213637641, guid: ab234495dd338a246b23137afc65957c, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8
@@ -13169,6 +13294,10 @@ PrefabInstance:
     - target: {fileID: 8383690479356465971, guid: 387da3a749befca4fb8e7bd6efd1c3cf, type: 3}
       propertyPath: m_Name
       value: Prop_Carpet_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383690479356465971, guid: 387da3a749befca4fb8e7bd6efd1c3cf, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9156674278977800585, guid: 387da3a749befca4fb8e7bd6efd1c3cf, type: 3}
       propertyPath: m_LocalScale.x
@@ -13349,6 +13478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_EarthMapBall
       objectReference: {fileID: 0}
+    - target: {fileID: 1157308512712802934, guid: a49b32dc9efad8f4b8e5e16c67a9873f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1964771587898480844, guid: a49b32dc9efad8f4b8e5e16c67a9873f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.8
@@ -13426,6 +13559,10 @@ PrefabInstance:
     - target: {fileID: 6074701697360389961, guid: 8c2280e636b09da468d7b132d4e204ff, type: 3}
       propertyPath: m_Name
       value: Prop_Faucet_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074701697360389961, guid: 8c2280e636b09da468d7b132d4e204ff, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6847298472577646067, guid: 8c2280e636b09da468d7b132d4e204ff, type: 3}
       propertyPath: m_LocalScale.x
