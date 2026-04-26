@@ -19,6 +19,10 @@ public class NPCController : MonoBehaviour
     public float investigateSpeed = 4.5f;
     public float investigateDuration = 3f;
 
+    [Header("Animasyon")]
+    [Tooltip("Animator (opsiyonel) - varsa Speed parametresi otomatik set edilir")]
+    public Animator animator;
+
     private NavMeshAgent agent;
     private float investigateTimer = 0f;
 
@@ -26,6 +30,10 @@ public class NPCController : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         agent.speed = patrolSpeed;
+        
+        // Animator otomatik bul
+        if (animator == null) animator = GetComponentInChildren<Animator>();
+        
         GoToNextWaypoint();
     }
 
@@ -34,7 +42,6 @@ public class NPCController : MonoBehaviour
         switch (currentState)
         {
             case NPCState.Patrol:
-                // Eğer hedefe yaklaştıysa ve yeni bir yol hesaplamıyorsa sonraki noktaya git
                 if (!agent.pathPending && agent.remainingDistance < 0.5f)
                 {
                     GoToNextWaypoint();
@@ -42,19 +49,24 @@ public class NPCController : MonoBehaviour
                 break;
 
             case NPCState.Investigating:
-                // Şüpheli noktaya ulaştığında etrafa bakınma süresi
                 if (!agent.pathPending && agent.remainingDistance < 0.5f)
                 {
                     investigateTimer += Time.deltaTime;
                     if (investigateTimer >= investigateDuration)
                     {
-                        // Araştırma bitti, devriyeye geri dön
                         currentState = NPCState.Patrol;
                         agent.speed = patrolSpeed;
                         GoToNextWaypoint();
                     }
                 }
                 break;
+        }
+
+        // Animator Speed parametresi
+        if (animator != null)
+        {
+            float currentSpeed = agent.velocity.magnitude;
+            animator.SetFloat("Speed", currentSpeed);
         }
     }
 
@@ -68,25 +80,23 @@ public class NPCController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // NPC Kuantum İzine basarsa
         QuantumTrail trail = other.GetComponent<QuantumTrail>();
         if (trail != null)
         {
             currentState = NPCState.Investigating;
             agent.speed = investigateSpeed;
-            agent.destination = trail.transform.position; // İzin olduğu yere git
+            agent.destination = trail.transform.position;
             investigateTimer = 0f;
             
             Debug.Log("NPC Şüpheli Bir İz Buldu! Araştırıyor...");
-            Destroy(trail.gameObject); // İzi bulduğu için siliyoruz
+            Destroy(trail.gameObject);
         }
 
-        // NPC Cesedi (Tabutu) bulursa oyun biter!
         Corpse foundCorpse = other.GetComponent<Corpse>();
         if (foundCorpse != null)
         {
             foundCorpse.isDiscovered = true;
-            agent.isStopped = true; // NPC'yi durdur
+            agent.isStopped = true;
             Debug.LogWarning("OYUN BİTTİ! DALGA FONKSİYONU ÇÖKTÜ! NPC CESEDİ BULDU!");
         }
     }
